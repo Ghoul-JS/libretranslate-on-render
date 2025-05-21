@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: libretranslate
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: LT_LOAD_ONLY
+        value: en,es
+      - key: LT_SERVE_LOCAL
+        value: true
