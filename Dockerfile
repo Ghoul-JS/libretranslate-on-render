@@ -5,3 +5,5 @@ ENV LT_LOAD_ONLY=en,es
 ENV LT_SERVE_LOCAL=true
 
 EXPOSE 10000
+
+CMD ["libretranslate", "--host", "0.0.0.0", "--port", "5000"]
